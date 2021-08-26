@@ -1,22 +1,30 @@
+<link rel="stylesheet" media="screen and (min-width:801px)" href="csstest.css">
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+    
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eNyxbn1hZ0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    document.documentElement.className = 'no-fouc'; 
+     $(document).ready(function () {
+        console.log("hello world!");
+        $('.no-fouc').removeClass('no-fouc');
+    })
+</script>
 
-<!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <link rel="stylesheet" href="csstest.css"> -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eNyxbn1hZ0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="flex">
+    <log>
+        <div>サンプルテストサンプルテストサンプルテストサンプルテストサンプルテスト</div>
+        
+    </log>
 
-<h1 class="logo"><a href="index.html"><img src="images/sample1.jpg" alt="SAMPLE SITE"></a></h1>
-テキスト
-テキスト
-テキスト
-テキスト
-テキスト
-テキスト
-テキスト
-テキスト
-<div class="center">
-    <a class="twitter-timeline" data-width="320" data-height="400" href="https://twitter.com/RedBlueWE1?ref_src=twsrc%5Etfw">Tweets by RedBlueWE1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+    <div class="no-fouc">
+        <a class="twitter-timeline" data-width="300px" data-height="420px" href="https://twitter.com/RedBlueWE1?ref_src=twsrc%5Etfw">Tweets by RedBlueWE1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>	
+    </div>
+
 </div>
 
-</html>
+<div class="color">
+    <p>classを追加1</p>
+    <p>classを追加2</p>
+    <p>classを追加3</p>
+</div>

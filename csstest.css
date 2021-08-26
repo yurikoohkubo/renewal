@@ -1,3 +1,9 @@
-
-body,html {width: 100%;height: 100%;}
-img {border: none;max-height:50%;vertical-align: middle;}
+.flex{
+    display: flex;
+    justify-content: space-between;
+	align-items: flex-end;
+	flex-basis: 10%;
+	
+}
+.color {color: red;}
+.no-fouc { display: none; }
