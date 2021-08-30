@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
 
 /*slide.cssの読み込み*/
-@import url(slide.css);
+@import url(slide_sh.css);
 
 
 /*全端末（PC・タブレット・スマホ）共通設定
@@ -244,7 +244,7 @@ header .icon img {
 /*h2タグ*/
 #main h2 {
 	clear: both;
-	margin-bottom: 20px;	/*見出しの下に空けるスペース*/
+	margin-bottom: 10px;	/*見出しの下に空けるスペース*/
 	font-size: 24px;		/*文字サイズ*/
 	letter-spacing: 0.2em;	/*文字間隔を少し広くとる設定*/
 	color: #c1bc9e;			/*文字色*/
@@ -362,7 +362,7 @@ footer a {text-decoration: none;}
 ---------------------------------------------------------------------------*/
 #new {
 	position: absolute;
-	top: 50%;	/*下からの配置指定*/
+	top: 45%;	/*下からの配置指定*/
 }
 /*見出しを含まないお知らせブロック*/
 #new dl {
@@ -702,6 +702,9 @@ footer .pr {display: block;}
 
 /* rab */
 #tweet_sh {
+	position: absolute;
+	left: 5%;
+	right: 5%;
 	height: 100%;
 }
 
