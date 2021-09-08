@@ -1,0 +1,27 @@
+<class=home>
+
+    <id=container>
+        çÇÇ≥:100%
+        <class=pc>
+        </pc>
+
+        <class=sh>
+        </sh>
+ 
+        <id=contents>
+            çÇÇ≥:100%
+            <id=main>
+                çÇÇ≥:100%
+                <id=new>
+                    çÇÇ≥:100%
+                    <class=flex>
+                        çÇÇ≥:100%
+                    </flex>
+                </new>
+            </main>
+        
+        </contents>   
+
+    </container>
+
+</home>

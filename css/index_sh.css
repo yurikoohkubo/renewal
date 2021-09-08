@@ -73,10 +73,7 @@ a:hover {
 
 /*contentsブロック
 ---------------------------------------------------------------------------*/
-#contents {
-	height: 100%;
-	width: 100%;
-}
+
 /*トップページのcontentsブロック。Whats's Newブロックの表示箇所です。*/
 .home #contents {
 	height: 100%;
@@ -121,7 +118,7 @@ header.pc .logo img {
 header.pc p {
 	padding: 10px;	/*余白*/
 }
-/* rab */
+/*trab*/
 a.twitter-timeline {
 	text-align: right;	/*内容をセンタリング*/
 }
@@ -361,12 +358,13 @@ footer a {text-decoration: none;}
 /*「更新情報・お知らせ」ブロック
 ---------------------------------------------------------------------------*/
 #new {
-	position: absolute;
-	top: 45%;	/*下からの配置指定*/
+	position: absolute; /* 絶対配置 */
+	top: 45%;	/*要素が起点の上からどれだけ離れているか*/
+	height: 100%;		/*高さ*/
 }
 /*見出しを含まないお知らせブロック*/
 #new dl {
-	height: 100px;		/*高さ*/
+	height: 15%;		/*高さ*/
 	overflow: hidden;	/*高さを超えるコンテンツ量部分は非表示に*/
 }
 /*ブロックのマウスオン時*/
@@ -700,7 +698,7 @@ footer .pr {display: block;}
 #tweet_pc {display:none;}
 
 
-/* rab */
+/*trab sh*/
 #tweet_sh {
 	position: absolute;
 	left: 5%;
@@ -708,8 +706,13 @@ footer .pr {display: block;}
 	height: 100%;
 }
 
+.home{
+	height: 100%;
 }
 
+.flex{
+	height: 100%;	
+}
 
 /*画面を横向きにした場合の高さが500px以下の場合の設定。
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
