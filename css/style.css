@@ -409,6 +409,35 @@ footer a {text-decoration: none;}
 	text-align: center;	/*センタリング*/
 }
 
+/* 募集状況 */
+.ta_join caption {
+	border: 1px solid #fff;	/*テーブルの枠線の幅、線種、色*/
+	border-bottom: none;	/*下線だけ消す*/
+	text-align: left;		/*文字を左寄せ*/
+	font-weight: bold;		/*太字に*/
+	padding: 10px;			/*ボックス内の余白*/
+	background: #000;		/*背景色*/
+}
+/*テーブルの見出し（※tamidashi）*/
+.ta_join th.tamidashi {
+	width: auto;
+	text-align: left;	/*左よせ*/
+	background: #000;	/*背景色*/
+}
+/*ta_join設定*/
+.ta_join {
+	table-layout: fixed;
+}
+.ta_join, .ta_join td, .ta_join th {
+	word-break: break-all;
+	border: 1px solid #fff;	/*テーブルの枠線の幅、線種、色*/
+	padding: 5px;	/*ボックス内の余白*/
+}
+/*ta_joinの左側ボックス*/
+.ta_join th {
+	width: 140px;		/*幅*/
+	text-align: center;	/*センタリング*/
+}
 /*フォーム関連
 ---------------------------------------------------------------------------*/
 /*ボタン（btn）*/
