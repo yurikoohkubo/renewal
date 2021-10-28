@@ -472,7 +472,8 @@
       if (this.options.sanitizeTitle) {
         $caption.text(this.album[this.currentImageIndex].title);
       } else {
-        $caption.html(this.album[this.currentImageIndex].title);
+        //$caption.html(this.album[this.currentImageIndex].title);
+        $caption.html(this.album[this.currentImageIndex].title.replace(/\r\n/g, "<br />").replace(/(\n|\r)/g, "<br />"))
       }
       $caption.fadeIn('fast');
     }
