@@ -263,9 +263,10 @@
 
     // Disable scrolling of the page while open
     if (this.options.disableScrolling) {
-      $('body').addClass('lb-disable-scrolling');
+      //$('body').addClass('lb-disable-scrolling');
     }
-
+    $('#main').removeClass('testA');
+    $('#main').addClass('testB');
     this.changeImage(imageNumber);
   };
 
@@ -417,7 +418,8 @@
   Lightbox.prototype.showImage = function() {
     this.$lightbox.find('.lb-loader').stop(true).hide();
     this.$lightbox.find('.lb-image').fadeIn(this.options.imageFadeDuration);
-
+    console.log('debug');
+    
     this.updateNav();
     this.updateDetails();
     this.preloadNeighboringImages();
@@ -543,12 +545,18 @@
   Lightbox.prototype.end = function() {
     this.disableKeyboardNav();
     $(window).off('resize', this.sizeOverlay);
-    this.$lightbox.fadeOut(this.options.fadeDuration);
-    this.$overlay.fadeOut(this.options.fadeDuration);
+    //this.$lightbox.fadeOut(this.options.fadeDuration);
+    //this.$overlay.fadeOut(this.options.fadeDuration);
+    this.$lightbox.fadeOut(0);
+    this.$overlay.fadeOut(0);
+    console.log('fadeOut');
 
     if (this.options.disableScrolling) {
-      $('body').removeClass('lb-disable-scrolling');
+    //  $('body').removeClass('lb-disable-scrolling');
     }
+    
+    $('#main').removeClass('testB');
+    $('#main').addClass('testA');
   };
 
   return new Lightbox();

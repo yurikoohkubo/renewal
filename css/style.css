@@ -222,7 +222,6 @@ header .icon img {
 }
 /*mainブロック*/
 #main {
-	overflow: auto;
 	padding: 2% 5% 0 15%;		/*上、右、下、左へのブロック内の余白*/
 	height: 98%;				/*高さ*/
 	animation-duration: 0.5S;	/*アニメーションの実行時間。秒。*/
@@ -289,6 +288,15 @@ header .icon img {
 	clear: both;
 	margin-bottom: 20px;	/*見出しの下に空けるスペース*/
 	font-size: 15px;		/*文字サイズ*/
+}
+.test {
+	overflow: hidden;
+}
+.test-content {
+	overflow-y: scroll;
+	height: 100px;
+	-webkit-overflow-scrolling: touch;
+	overflow-scrolling: touch;
 }
 
 .item-demo{
