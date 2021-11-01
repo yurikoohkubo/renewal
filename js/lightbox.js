@@ -263,10 +263,9 @@
 
     // Disable scrolling of the page while open
     if (this.options.disableScrolling) {
-      //$('body').addClass('lb-disable-scrolling');
+      $('body').addClass('lb-disable-scrolling');
     }
-    $('#main').removeClass('testA');
-    $('#main').addClass('testB');
+
     this.changeImage(imageNumber);
   };
 
@@ -418,8 +417,7 @@
   Lightbox.prototype.showImage = function() {
     this.$lightbox.find('.lb-loader').stop(true).hide();
     this.$lightbox.find('.lb-image').fadeIn(this.options.imageFadeDuration);
-    console.log('debug');
-    
+
     this.updateNav();
     this.updateDetails();
     this.preloadNeighboringImages();
@@ -474,8 +472,7 @@
       if (this.options.sanitizeTitle) {
         $caption.text(this.album[this.currentImageIndex].title);
       } else {
-        //$caption.html(this.album[this.currentImageIndex].title);
-        $caption.html(this.album[this.currentImageIndex].title.replace(/\r\n/g, "<br />").replace(/(\n|\r)/g, "<br />"))
+        $caption.html(this.album[this.currentImageIndex].title);
       }
       $caption.fadeIn('fast');
     }
@@ -545,18 +542,12 @@
   Lightbox.prototype.end = function() {
     this.disableKeyboardNav();
     $(window).off('resize', this.sizeOverlay);
-    //this.$lightbox.fadeOut(this.options.fadeDuration);
-    //this.$overlay.fadeOut(this.options.fadeDuration);
-    this.$lightbox.fadeOut(0);
-    this.$overlay.fadeOut(0);
-    console.log('fadeOut');
+    this.$lightbox.fadeOut(this.options.fadeDuration);
+    this.$overlay.fadeOut(this.options.fadeDuration);
 
     if (this.options.disableScrolling) {
-    //  $('body').removeClass('lb-disable-scrolling');
+      $('body').removeClass('lb-disable-scrolling');
     }
-    
-    $('#main').removeClass('testB');
-    $('#main').addClass('testA');
   };
 
   return new Lightbox();

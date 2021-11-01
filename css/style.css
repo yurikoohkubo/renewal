@@ -51,8 +51,8 @@ a:hover {
 }
 /*about.htmlの背景画像指定*/
 .about #container {
-	background: url(../images/1.jpg) no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
-	background: url(../images/1.jpg) no-repeat center center / cover;	/*背景画像*/
+	background: url(../images/com_bg.jpg) no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
+	background: url(../images/com_bg.jpg) no-repeat center center / cover;	/*背景画像*/
 }
 /*works.htmlの背景画像指定*/
 .works #container {
@@ -61,8 +61,8 @@ a:hover {
 }
 /*join.htmlの背景画像指定*/
 .join #container {
-	background: url(../images/3.jpg) no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
-	background: url(../images/3.jpg) no-repeat center center / cover;	/*背景画像*/
+	background: url(../images/com_bg.jpg) no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
+	background: url(../images/com_bg.jpg) no-repeat center center / cover;	/*背景画像*/
 }
 /*contact.htmlにも背景画像を指定したい場合は、以下にスタイルを追加して下さい。*/
 .contact #container {
@@ -222,6 +222,7 @@ header .icon img {
 }
 /*mainブロック*/
 #main {
+	overflow: auto;
 	padding: 2% 5% 0 15%;		/*上、右、下、左へのブロック内の余白*/
 	height: 98%;				/*高さ*/
 	animation-duration: 0.5S;	/*アニメーションの実行時間。秒。*/
@@ -289,63 +290,6 @@ header .icon img {
 	margin-bottom: 20px;	/*見出しの下に空けるスペース*/
 	font-size: 15px;		/*文字サイズ*/
 }
-.test {
-	overflow: hidden;
-}
-.test-content {
-	overflow-y: scroll;
-	height: 100px;
-	-webkit-overflow-scrolling: touch;
-	overflow-scrolling: touch;
-}
-
-.item-demo{
-    cursor:pointer;
-}
-.popup-demo {
-    display: none;
-    height: 100vh;
-    width: 100%;
-    background:rgba(0,0,0,0.8);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index:100;
-}
-  
-.popup-content{
-    padding: 2rem;
-    width: 90vw;
-    height:80vh;
-    overflow-y:auto;
-    position:relative;
-}
-.content-demo{
-    background:url("../images/zisyurenn2.png") center / cover no-repeat;
-}
-.popup-show {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-i.close{
-    font-size:4rem;
-    cursor:pointer;
-    position:absolute;
-    top:2%;
-    right:2%;
-    color:#fff;
-}
- 
-@media screen and (min-width: 769px) {
- 
-.popup-content{
-    width: 65%;
-    max-width:60rem;
-    height:90vh;
-}
-}
-
 /*listブロック（works.htmlで使用）
 ---------------------------------------------------------------------------*/
 /*各ボックスの指定*/
