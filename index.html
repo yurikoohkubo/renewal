@@ -99,35 +99,39 @@
 
 					<section id="new">
 						<div class="flex">
-							<log>
-								<!-- <div id="main"> -->
-								<h2>What's New</h2>
-								<dl>
-								<dt>2019/11/09</dt>
-								<dd>幅800px以下の端末でトップページの「What's New」を見た場合にスクロールできなかった問題点を修正。利用中のお客様は、index.cssの800px以下に#new dl {overflow: auto;}を追加して下さい。<span class="newicon">NEW</span></dd>
-								<dt>2019/08/27</dt>
-								<dd>印刷した際に１ページ目しか印刷できない問題を修正しました。</dd>
-								<dt>2019/08/17</dt>
-								<dd>ページ右下の「↑」アイコンをクリックしても上部に戻らない不具合を修正しました。</dd>
-								<dt>2019/07/19</dt>
-								<dd>tp_biz52公開。</dd>
-								<dt>20XX/00/00</dt>
-								<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-								<dt>20XX/00/00</dt>
-								<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-								<dt>20XX/00/00</dt>
-								<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-								<dt>20XX/00/00</dt>
-								<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-								<dt>20XX/00/00</dt>
-								<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-								<dt>20XX/00/00</dt>
-								<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-								<dt>20XX/00/00</dt>
-								<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-								</dl>
-								
-							</log>
+
+							<div id="newsblock">
+								<div id="newsboard"><img src="images/info.png"></div>
+								<div id="log">
+									<!-- <div id="main"> -->
+									<h2>What's New</h2>
+									<dl>
+									<dt>2019/11/09</dt>
+									<dd>幅800px以下の端末でトップページの「What's New」を見た場合にスクロールできなかった問題点を修正。利用中のお客様は、index.cssの800px以下に#new dl {overflow: auto;}を追加して下さい。<span class="newicon">NEW</span></dd>
+									<dt>2019/08/27</dt>
+									<dd>印刷した際に１ページ目しか印刷できない問題を修正しました。</dd>
+									<dt>2019/08/17</dt>
+									<dd>ページ右下の「↑」アイコンをクリックしても上部に戻らない不具合を修正しました。</dd>
+									<dt>2019/07/19</dt>
+									<dd>tp_biz52公開。</dd>
+									<dt>20XX/00/00</dt>
+									<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+									<dt>20XX/00/00</dt>
+									<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+									<dt>20XX/00/00</dt>
+									<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+									<dt>20XX/00/00</dt>
+									<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+									<dt>20XX/00/00</dt>
+									<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+									<dt>20XX/00/00</dt>
+									<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+									<dt>20XX/00/00</dt>
+									<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+									</dl>
+									
+								</div>
+							</div>
 
 
 							<div id="tweet_pc">
@@ -143,9 +147,7 @@
 			<!--/#main-->
 
 			<sw2>
-				<div id="tweet_sh">
-					<a class="twitter-timeline" align="left" data-chrome="noheader" data-theme="light" data-width="100%" data-height="65%" href="https://twitter.com/RedBlueWE1?ref_src=twsrc%5Etfw">Tweets by RedBlueWE1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>	
-				</div>
+
 			</sw2>
 			<footer>
 				<small>Copyright&copy; <a href="index.html">SAMPLE SITE</a> All Rights Reserved.</small>
@@ -167,8 +169,9 @@
 	</aside>
 
 	<!--ページの上部に戻る「↑」ボタン-->
-	
+	<div id="btn_sh">
 	<btn><p class="nav-fix-pos-pagetop_idx"><a href="#pagetop">↑</a></p></btn>
+	</div>
 	<!--メニュー開閉ボタン-->
 	<div id="menubar_hdr" class="close"></div>
 
