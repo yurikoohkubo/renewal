@@ -291,6 +291,9 @@ header .icon img {
 	font-size: 15px;		/*文字サイズ*/
 }
 
+#schedule {
+	overflow-x: scroll;
+}
 
 .youtube{
 	position:relative;
