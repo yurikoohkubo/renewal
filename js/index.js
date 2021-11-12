@@ -1,23 +1,27 @@
 $(function() {
     // classの追加
     $('btn').on('click', function() {
-        console.log('hello');
+        
 
 
-        if($('sw1').hasClass('switch_a')){
-            $('sw1').removeClass('switch_a');
-            $('sw1').addClass('switch_a_back');
+        if($('#newsblock').hasClass('switch_a')){
+            console.log('test1');
+            $('#newsblock').removeClass('switch_a');
+            $('#newsblock').addClass('switch_a_back');
         }else{
-            $('sw1').removeClass('switch_a_back');
-            $('sw1').addClass('switch_a');
+            console.log('test2');
+            $('#newsblock').removeClass('switch_a_back');
+            $('#newsblock').addClass('switch_a');
         } 
 
-        if($('sw2').hasClass('switch_b')){
-            $('sw2').removeClass('switch_b');
-            $('sw2').addClass('switch_b_back');
+        if($('#tweet_sh').hasClass('switch_b')){
+            console.log('test3');
+            $('#tweet_sh').removeClass('switch_b');
+            $('#tweet_sh').addClass('switch_b_back');
         }else{
-            $('sw2').removeClass('switch_b_back');
-            $('sw2').addClass('switch_b');
+            console.log('test4');
+            $('#tweet_sh').removeClass('switch_b_back');
+            $('#tweet_sh').addClass('switch_b');
         } 
     }) 
 

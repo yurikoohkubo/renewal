@@ -232,14 +232,7 @@ header .icon img {
 }
 /*mainブロック*/
 #main {
-	overflow: auto;
-	padding: 0% 5% 0 15%;		/*上、右、下、左へのブロック内の余白*/
 	height: 100%;				/*高さ*/
-	animation-duration: 1.5S;	/*アニメーションの実行時間。秒。*/
-	animation-fill-mode: both;	/*アニメーションの待機中は最初のキーフレームを、完了後は最後のキーフレームを維持する*/
-	animation-name: main;		/*上のアニメーション設定で使っているkeyframesの名前。contents。*/
-	animation-delay: 0.1s;		/*アニメーションを遅れて開始させる指定。0.5sは0.5秒の事。*/
-	position: relative;
 }
 /*h2タグ*/
 #main h2 {
@@ -361,8 +354,6 @@ footer a {text-decoration: none;}
 /*「更新情報・お知らせ」ブロック
 ---------------------------------------------------------------------------*/
 #new {
-	position: absolute; /* 絶対配置 */
-	top: 45%;	/*要素が起点の上からどれだけ離れているか*/
 	height: 100%;		/*高さ*/
 }
 /*見出しを含まないお知らせブロック*/
@@ -718,28 +709,39 @@ footer .pr {display: block;}
 .flex{
 	height: 100%;	
 }
-
+#newsboard {
+	height: 100%;	
+	margin-left: auto;
+	margin-right: auto;	
+}
+#newsblock {
+	position: absolute;
+	top: -110%;
+	display:flex;
+	flex-flow: column;
+	height: 100%;	
+}
 #tweet_sh{
 	position: absolute;
-	top: 1%;
-	left: 5%;
-	right: 5%;
+	top: 0%;
+	right: 3%;
+	left: 3%;
 	height: 100%;
 
 }
 @keyframes switch_a {
 	/*0コマ目*/
 	0% {
-		top: 0%;
+		top: -110%;
 	}
 	/*100コマ目*/
 	100% {
-		top: 110%;
+		top: 0%;
 	}
 }
 .switch_a{
 	position: absolute;
-	top: 110%;
+	top: 0%;
 	left: 0%;
 	right: 0%;
 	height: 100%;
@@ -774,16 +776,16 @@ footer .pr {display: block;}
 @keyframes switch_a_back {
 	/*0コマ目*/
 	0% {
-		top: 110%;
+		top: 0%;
 	}
 	/*100コマ目*/
 	100% {
-		top: 0%;
+		top: -110%;
 	}
 }
 .switch_a_back{
 	position: absolute;
-	top: 0%;
+	top: -110%;
 	left: 0%;
 	right: 0%;
 	height: 100%;
