@@ -59,12 +59,12 @@
 }
 /*１枚目*/
 .slide1 {
-	background: url(../images/1.jpg) no-repeat center center/cover;
+	background: url(../images/1.jpg) no-repeat 85% center/cover;
 	animation-name: slide1;		/*上で設定しているキーフレーム（keyframes）の名前*/
 }
 /*２枚目*/
 .slide2 {
-	background: url(../images/2.jpg) no-repeat center center/cover;
+	background: url(../images/2.jpg) no-repeat 100% center/cover;
 	animation-name: slide2;		/*上で設定しているキーフレーム（keyframes）の名前*/
 }
 /*３枚目*/

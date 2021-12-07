@@ -732,6 +732,21 @@ footer .pr {display: block;}
 
 }
 
+/*about.htmlの背景画像指定*/
+.about #container {
+	background: url(../images/com_bg.jpg) no-repeat 85% center;	/*背景画像（※IE8以下の古いブラウザ用）*/
+	background: url(../images/com_bg.jpg) no-repeat 85% center / cover;	/*背景画像*/
+}
+/*works.htmlの背景画像指定*/
+.works #container {
+	background: url(../images/com_bg.jpg) no-repeat 85% center;	/*背景画像（※IE8以下の古いブラウザ用）*/
+	background: url(../images/com_bg.jpg) no-repeat 85% center / cover;	/*背景画像*/
+}
+/*join.htmlの背景画像指定*/
+.join #container {
+	background: url(../images/com_bg.jpg) no-repeat 85% center;	/*背景画像（※IE8以下の古いブラウザ用）*/
+	background: url(../images/com_bg.jpg) no-repeat 85% center / cover;	/*背景画像*/
+}
 
 /*画面を横向きにした場合の高さが500px以下の場合の設定。
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
