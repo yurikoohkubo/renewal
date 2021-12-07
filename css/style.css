@@ -730,8 +730,6 @@ footer .pr {display: block;}
 .sh {display:block;}
 .pc {display:none;}
 
-}
-
 /*about.htmlの背景画像指定*/
 .about #container {
 	background: url(../images/com_bg.jpg) no-repeat 85% center;	/*背景画像（※IE8以下の古いブラウザ用）*/
@@ -748,6 +746,7 @@ footer .pr {display: block;}
 	background: url(../images/com_bg.jpg) no-repeat 85% center / cover;	/*背景画像*/
 }
 
+}
 /*画面を横向きにした場合の高さが500px以下の場合の設定。
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (orientation: landscape) and (max-height:500px){

@@ -45,33 +45,11 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*containerブロック共通*/
 #container {
-	
-	width: 100%;
-	height: 100%;
-}
-#works_bg {
-	position: fixed;
+	position: fixed;	
 	width: 100%;
 	height: 100%;
 	background: url(../images/com_bg.jpg) no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
 	background: url(../images/com_bg.jpg) no-repeat center center / cover;	/*背景画像*/
-}
-/*about.htmlの背景画像指定*/
-.about #container {
-	background: url(../images/1.jpg) no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
-	background: url(../images/1.jpg) no-repeat center center / cover;	/*背景画像*/
-}
-/*works.htmlの背景画像指定*/
-.works #container {
-}
-/*join.htmlの背景画像指定*/
-.join #container {
-	background: url(../images/3.jpg) no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
-	background: url(../images/3.jpg) no-repeat center center / cover;	/*背景画像*/
-}
-/*contact.htmlにも背景画像を指定したい場合は、以下にスタイルを追加して下さい。*/
-.contact #container {
-	background: #737f02;
 }
 
 /*contentsブロック
@@ -227,6 +205,7 @@ header .icon img {
 }
 /*mainブロック*/
 #main {
+	overflow: auto;
 	padding: 2% 5% 0 15%;		/*上、右、下、左へのブロック内の余白*/
 	height: 98%;				/*高さ*/
 	animation-duration: 0.5S;	/*アニメーションの実行時間。秒。*/
