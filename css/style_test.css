@@ -54,8 +54,8 @@ a:hover {
 	background: url(../images/1.jpg) no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
 	background: url(../images/1.jpg) no-repeat center center / cover;	/*背景画像*/
 }
-/*works.htmlの背景画像指定*/
-.works #container {
+/*events.htmlの背景画像指定*/
+.events #container {
 	background: url(../images/2.jpg) no-repeat center center;	/*背景画像（※IE8以下の古いブラウザ用）*/
 	background: url(../images/2.jpg) no-repeat center center / cover;	/*背景画像*/
 }
@@ -290,7 +290,7 @@ header .icon img {
 	margin-bottom: 20px;	/*見出しの下に空けるスペース*/
 	font-size: 15px;		/*文字サイズ*/
 }
-/*listブロック（works.htmlで使用）
+/*listブロック（events.htmlで使用）
 ---------------------------------------------------------------------------*/
 /*各ボックスの指定*/
 .list {
@@ -733,7 +733,7 @@ footer .pr {display: block;}
 	padding-top: 20px;
 }
 
-/*listブロック（works.htmlで使用）
+/*listブロック（events.htmlで使用）
 ---------------------------------------------------------------------------*/
 /*リンクを指定した際に右上に出る「→」*/
 .list a::after {
