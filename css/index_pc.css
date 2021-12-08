@@ -134,7 +134,10 @@ header.pc p {
 	height: 40%;
 }
 #new {
-	height: 100%;
+	position: relative;
+	top: -100%;
+	padding: 2% 0% 0% 0%;
+	height: 98%;
 }
 #newsblock {
 	height: 100%;
@@ -142,6 +145,40 @@ header.pc p {
 }
 #newsboard {
 	height: 60%;
+}
+@keyframes switch_a {
+	/*0コマ目*/
+	0% {
+		top: -100%;
+	}
+	/*100コマ目*/
+	100% {
+		top: 0%;
+	}
+}
+.switch_a{
+	top: 0%;
+	animation-duration: 1.5S;	/*アニメーションの実行時間。秒。*/
+	animation-fill-mode: both;	/*アニメーションの待機中は最初のキーフレームを、完了後は最後のキーフレームを維持する*/
+	animation-name: switch_a;		/*上のアニメーション設定で使っているkeyframesの名前。contents。*/
+	animation-delay: 0.1s;		/*アニメーションを遅れて開始させる指定。0.5sは0.5秒の事。*/
+}
+@keyframes switch_a_back {
+	/*0コマ目*/
+	0% {
+		top: 0%;
+	}
+	/*100コマ目*/
+	100% {
+		top: -100%;
+	}
+}
+.switch_a_back{
+	top: -100%;
+	animation-duration: 1.5S;	/*アニメーションの実行時間。秒。*/
+	animation-fill-mode: both;	/*アニメーションの待機中は最初のキーフレームを、完了後は最後のキーフレームを維持する*/
+	animation-name: switch_a_back;		/*上のアニメーション設定で使っているkeyframesの名前。contents。*/
+	animation-delay: 0.1s;		/*アニメーションを遅れて開始させる指定。0.5sは0.5秒の事。*/
 }
 /*メインメニュー
 ---------------------------------------------------------------------------*/
@@ -245,8 +282,7 @@ header .icon img {
 }
 /*mainブロック*/
 #main {
-	overflow: auto;
-	padding: 2% 5% 0 12%;		/*上、右、下、左へのブロック内の余白*/
+	padding: 0% 5% 0 12%;		/*上、右、下、左へのブロック内の余白*/
 	height: 90%;				/*高さ*/
 	animation-duration: 0.5S;	/*アニメーションの実行時間。秒。*/
 	animation-fill-mode: both;	/*アニメーションの待機中は最初のキーフレームを、完了後は最後のキーフレームを維持する*/
@@ -474,16 +510,13 @@ p.check a {color: #fff;}
 
 /*PAGE TOP（↑）設定
 ---------------------------------------------------------------------------*/
-/*トップページでは非表示に。*/
-.home .nav-fix-pos-pagetop a {
-	display: none;
-}
+
 /*設定*/
-.nav-fix-pos-pagetop a {
+.nav-fix-pos-pagetop_idx a {
 	display: block;text-decoration: none;text-align: center;z-index: 100;position: fixed;
-	width: 40px;		/*ボタンの幅*/
-	line-height: 40px;	/*ボタンの高さ*/
-	bottom: 20px;		/*ウィンドウの下から20pxの場所に配置*/
+	width: 80px;		/*ボタンの幅*/
+	line-height: 80px;	/*ボタンの高さ*/
+	top: 20px;		/*ウィンドウの下から20pxの場所に配置*/
 	right: 3%;			/*ウィンドウの右から3%の場所に配置*/
 	background: #737f02;	/*背景色*/
 	color: #fff;		/*文字色*/
@@ -491,7 +524,7 @@ p.check a {color: #fff;}
 	border-radius: 50%;	/*円形にする指定*/
 }
 /*マウスオン時の背景色*/
-.nav-fix-pos-pagetop a:hover {
+.nav-fix-pos-pagetop_idx a:hover {
 	background: #fff;	/*背景色*/
 	color: #737f02;		/*文字色*/
 }
