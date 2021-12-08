@@ -134,30 +134,29 @@ header.pc p {
 	height: 40%;
 }
 #new {
+	overflow: hidden;
 	position: relative;
-	top: -100%;
-	padding: 2% 0% 0% 0%;
-	height: 98%;
+	top: -102%;
+	height: 100%;
 }
 #newsblock {
 	height: 100%;
     width: 70%;
 }
-#newsboard {
-	height: 60%;
+#newsboard {	height: 60%;
 }
 @keyframes switch_a {
 	/*0コマ目*/
 	0% {
-		top: -100%;
+		top: -102%;
 	}
 	/*100コマ目*/
 	100% {
-		top: 0%;
+		top: 2%;
 	}
 }
 .switch_a{
-	top: 0%;
+	top: 2%;
 	animation-duration: 1.5S;	/*アニメーションの実行時間。秒。*/
 	animation-fill-mode: both;	/*アニメーションの待機中は最初のキーフレームを、完了後は最後のキーフレームを維持する*/
 	animation-name: switch_a;		/*上のアニメーション設定で使っているkeyframesの名前。contents。*/
@@ -166,15 +165,15 @@ header.pc p {
 @keyframes switch_a_back {
 	/*0コマ目*/
 	0% {
-		top: 0%;
+		top: 2%;
 	}
 	/*100コマ目*/
 	100% {
-		top: -100%;
+		top: -102%;
 	}
 }
 .switch_a_back{
-	top: -100%;
+	top: -102%;
 	animation-duration: 1.5S;	/*アニメーションの実行時間。秒。*/
 	animation-fill-mode: both;	/*アニメーションの待機中は最初のキーフレームを、完了後は最後のキーフレームを維持する*/
 	animation-name: switch_a_back;		/*上のアニメーション設定で使っているkeyframesの名前。contents。*/
